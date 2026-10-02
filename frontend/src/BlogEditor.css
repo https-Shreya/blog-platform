@@ -1,0 +1,71 @@
+.editor-wrapper {
+  border: 1px solid #ddd4cc;
+  background: #fffefa;
+}
+
+.editor-toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd4cc;
+  background: #f6f1ec;
+}
+
+.editor-toolbar button {
+  border: 1px solid #d4cbc3;
+  background: white;
+  color: #40383f;
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.editor-toolbar button:hover {
+  background: #eee6f3;
+}
+
+.editor-toolbar button.active {
+  background: #4b365f;
+  color: white;
+}
+
+.ProseMirror {
+  min-height: 400px;
+  padding: 25px;
+  outline: none;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #302735;
+}
+
+.ProseMirror p {
+  margin-bottom: 15px;
+}
+
+.ProseMirror h2 {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  margin: 25px 0 15px;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.ProseMirror:focus {
+  outline: none;
+}
+.ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 25px auto;
+  border-radius: 8px;
+}
+.ProseMirror {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

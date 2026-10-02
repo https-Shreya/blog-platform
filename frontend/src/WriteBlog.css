@@ -1,0 +1,146 @@
+.write-page {
+  min-height: calc(100vh - 75px);
+  padding: 60px 30px;
+  background: #e9e2da;
+  display: flex;
+  justify-content: center;
+}
+
+.paper {
+  width: min(900px, 100%);
+  min-height: 900px;
+  background: #fffdf9;
+  padding: 70px 85px;
+  box-shadow: 0 15px 45px rgba(45, 35, 50, 0.14);
+}
+
+.paper-header {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.paper-header p {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #76558f;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.paper-header h1 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  font-weight: 500;
+  color: #302735;
+  margin-bottom: 12px;
+}
+
+.paper-header span {
+  color: #817872;
+  font-size: 16px;
+}
+
+.field {
+  margin-bottom: 30px;
+}
+
+.field label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #40383f;
+  margin-bottom: 10px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cfc5bd;
+  background: transparent;
+  padding: 14px 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #302735;
+  outline: none;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-bottom: 1px solid #76558f;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #aaa19b;
+}
+
+.content-field {
+  margin-top: 40px;
+}
+
+.content-field textarea {
+  min-height: 400px;
+  resize: vertical;
+  border: 1px solid #ddd4cc;
+  padding: 20px;
+  line-height: 1.8;
+  background: #fffefa;
+}
+
+.content-field textarea:focus {
+  border: 1px solid #76558f;
+}
+
+.publish-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+.publish-area button {
+  border: none;
+  background: #4b365f;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.publish-area button:hover {
+  background: #654b7b;
+}
+
+.form-message {
+  text-align: center;
+  margin-top: 25px;
+  color: #76558f;
+  font-weight: bold;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .write-page {
+    padding: 25px 12px;
+  }
+
+  .paper {
+    padding: 45px 25px;
+    min-height: auto;
+  }
+
+  .paper-header h1 {
+    font-size: 38px;
+  }
+
+  .content-field textarea {
+    min-height: 300px;
+  }
+
+  .publish-area {
+    justify-content: center;
+  }
+}

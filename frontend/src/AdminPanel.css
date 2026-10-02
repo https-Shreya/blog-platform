@@ -1,0 +1,658 @@
+/* ========================================
+   BLOGLY ADMIN PANEL
+======================================== */
+
+.admin-panel {
+  min-height: 100vh;
+  background: #fbf8ff;
+  color: #17121f;
+  padding: 50px 7%;
+  font-family: Arial, sans-serif;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 45px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5dcef;
+}
+
+.admin-label {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #8064a9;
+}
+
+.admin-header h1 {
+  margin: 0 0 10px;
+  font-size: 42px;
+  line-height: 1.1;
+  color: #332044;
+}
+
+.admin-header > div > p:last-child {
+  margin: 0;
+  font-size: 16px;
+  color: #6f6678;
+}
+
+/* ========================================
+   BACK BUTTON
+======================================== */
+
+.admin-back-btn {
+  border: 1px solid #cbb9e3;
+  background: white;
+  color: #332044;
+
+  padding: 13px 20px;
+  border-radius: 10px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+
+.admin-back-btn:hover {
+  background: #f1eafa;
+  transform: translateY(-1px);
+}
+
+/* ========================================
+   STAT CARDS
+======================================== */
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+
+  margin-bottom: 55px;
+}
+
+.admin-stat-card {
+  background: white;
+
+  border: 1px solid #e5dcef;
+  border-radius: 16px;
+
+  padding: 24px 27px;
+
+  box-shadow:
+    0 8px 25px rgba(51, 32, 68, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(51, 32, 68, 0.09);
+}
+
+.admin-stat-card span {
+  display: block;
+
+  color: #746b7d;
+
+  font-size: 14px;
+
+  margin-bottom: 8px;
+}
+
+.admin-stat-card strong {
+  display: block;
+
+  color: #332044;
+
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+.admin-message {
+  background: #eee6fa;
+
+  color: #5d427d;
+
+  border: 1px solid #d8c9eb;
+
+  padding: 13px 17px;
+
+  border-radius: 10px;
+
+  margin-bottom: 30px;
+
+  font-size: 14px;
+}
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+.admin-blogs,
+.admin-users {
+  margin-bottom: 65px;
+}
+
+.admin-section-heading {
+  margin-bottom: 25px;
+}
+
+.admin-section-heading p {
+  margin: 0 0 7px;
+
+  color: #8064a9;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+}
+
+.admin-section-heading h2 {
+  margin: 0;
+
+  color: #332044;
+
+  font-size: 28px;
+}
+
+/* ========================================
+   BLOG LIST
+======================================== */
+
+.admin-blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ========================================
+   BLOG CARD
+======================================== */
+
+.admin-blog-card {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  background: white;
+
+  border: 1px solid #e5dcef;
+  border-radius: 15px;
+
+  padding: 22px 25px;
+
+  box-shadow:
+    0 5px 18px rgba(51, 32, 68, 0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.admin-blog-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #cdbbe4;
+
+  box-shadow:
+    0 10px 25px rgba(51, 32, 68, 0.08);
+}
+
+/* ========================================
+   BLOG INFORMATION
+======================================== */
+
+.admin-blog-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.admin-blog-category {
+  display: inline-block;
+
+  margin: 0 0 8px;
+
+  color: #8064a9;
+  background: #f1eafa;
+
+  padding: 5px 9px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.admin-blog-info h3 {
+  margin: 0 0 8px;
+
+  color: #24192e;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  word-break: break-word;
+}
+
+.admin-blog-info p:not(.admin-blog-category) {
+  margin: 0 0 5px;
+
+  color: #746b7d;
+
+  font-size: 14px;
+}
+
+.admin-blog-info p strong {
+  color: #332044;
+}
+
+.admin-blog-info small {
+  color: #9a919f;
+
+  font-size: 12px;
+}
+
+/* ========================================
+   BLOG DELETE BUTTON
+======================================== */
+
+.admin-delete-btn {
+  flex-shrink: 0;
+
+  border: 1px solid #e2b8bd;
+
+  background: #fff7f7;
+
+  color: #a33c47;
+
+  padding: 11px 17px;
+
+  border-radius: 9px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.admin-delete-btn:hover {
+  background: #f9e4e6;
+
+  color: #8e2934;
+
+  transform: translateY(-1px);
+}
+
+.admin-delete-btn:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* ========================================
+   USER LIST
+======================================== */
+
+.admin-user-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 13px;
+}
+
+/* ========================================
+   USER CARD
+======================================== */
+
+.admin-user-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  background: white;
+
+  border: 1px solid #e5dcef;
+  border-radius: 14px;
+
+  padding: 17px 20px;
+
+  box-shadow:
+    0 5px 18px rgba(51, 32, 68, 0.035);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.admin-user-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #cdbbe4;
+
+  box-shadow:
+    0 9px 24px rgba(51, 32, 68, 0.07);
+}
+
+/* ========================================
+   USER AVATAR
+======================================== */
+
+.admin-user-avatar {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eee6fa;
+
+  color: #5d427d;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* ========================================
+   USER INFORMATION
+======================================== */
+
+.admin-user-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.admin-user-info h3 {
+  margin: 0 0 4px;
+
+  color: #332044;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.admin-user-info p {
+  margin: 0;
+
+  color: #817789;
+
+  font-size: 13px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ========================================
+   ROLE BADGES
+======================================== */
+
+.admin-role-badge,
+.user-role-badge {
+  flex-shrink: 0;
+
+  padding: 6px 10px;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.admin-role-badge {
+  background: #f1eafa;
+
+  color: #6d4d91;
+
+  border: 1px solid #ddcfee;
+}
+
+.user-role-badge {
+  background: #f5f3f7;
+
+  color: #716878;
+
+  border: 1px solid #e3dfe7;
+}
+
+/* ========================================
+   CURRENT ADMIN
+======================================== */
+
+.current-admin-label {
+  flex-shrink: 0;
+
+  padding: 7px 13px;
+
+  border-radius: 8px;
+
+  background: #332044;
+
+  color: white;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+}
+
+/* ========================================
+   USER DELETE BUTTON
+======================================== */
+
+.admin-user-delete-btn {
+  flex-shrink: 0;
+
+  border: 1px solid #e2b8bd;
+
+  background: #fff7f7;
+
+  color: #a33c47;
+
+  padding: 8px 13px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.admin-user-delete-btn:hover {
+  background: #f9e4e6;
+
+  color: #8e2934;
+
+  transform: translateY(-1px);
+}
+
+.admin-user-delete-btn:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+.admin-empty {
+  background: white;
+
+  border: 1px solid #e5dcef;
+
+  border-radius: 15px;
+
+  padding: 45px;
+
+  text-align: center;
+}
+
+.admin-empty h3 {
+  margin: 0 0 8px;
+
+  color: #332044;
+
+  font-size: 22px;
+}
+
+.admin-empty p {
+  margin: 0;
+
+  color: #746b7d;
+}
+
+/* ========================================
+   LOADING
+======================================== */
+
+.admin-panel > p {
+  color: #746b7d;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .admin-panel {
+    padding: 35px 5%;
+  }
+
+  .admin-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .admin-header h1 {
+    font-size: 34px;
+  }
+
+  .admin-back-btn {
+    width: 100%;
+  }
+
+  .admin-blog-card {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .admin-delete-btn {
+    width: 100%;
+  }
+
+  .admin-user-card {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  .admin-user-info {
+    min-width: calc(100% - 70px);
+  }
+
+  .admin-role-badge,
+  .current-admin-label,
+  .admin-user-delete-btn {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-panel {
+    padding: 25px 18px;
+  }
+
+  .admin-header h1 {
+    font-size: 30px;
+  }
+
+  .admin-section-heading h2 {
+    font-size: 24px;
+  }
+
+  .admin-blog-card {
+    padding: 19px;
+  }
+
+  .admin-blog-info h3 {
+    font-size: 18px;
+  }
+
+  .admin-user-card {
+    padding: 16px;
+  }
+
+  .admin-user-info {
+    min-width: 0;
+  }
+
+  .admin-role-badge,
+  .current-admin-label,
+  .admin-user-delete-btn {
+    margin-left: 0;
+  }
+
+  .admin-user-delete-btn {
+    width: 100%;
+  }
+}
