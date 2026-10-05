@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Auth.css";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://blog-platform-l89y.onrender.com/api/auth";
 
 function Auth({ onLogin, onClose }) {
   const [isLogin, setIsLogin] = useState(true);

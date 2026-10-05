@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import "./BlogDetails.css";
 
 const COMMENTS_API =
-  "http://localhost:5000/api/comments";
+  "https://blog-platform-l89y.onrender.com/api/comments";
 
 const POSTS_API =
-  "http://localhost:5000/api/posts";
+  "https://blog-platform-l89y.onrender.com/api/posts";
 
 function BlogDetails({
   post,

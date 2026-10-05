@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import "./AdminPanel.css";
 
 const POSTS_API =
-  "http://localhost:5000/api/posts";
+  "https://blog-platform-l89y.onrender.com/api/posts";
 
 const USERS_API =
-  "http://localhost:5000/api/auth/users";
+  "https://blog-platform-l89y.onrender.com/api/auth/users";
 
 function AdminPanel({ user, onBack }) {
   const [posts, setPosts] = useState([]);

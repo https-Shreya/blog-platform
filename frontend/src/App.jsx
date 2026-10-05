@@ -5,7 +5,7 @@ import BlogDetails from "./BlogDetails";
 import Auth from "./Auth";
 import AdminPanel from "./AdminPanel";
 
-const API_URL = "http://localhost:5000/api/posts";
+const API_URL = "https://blog-platform-l89y.onrender.com/api/posts";
 
 function App() {
   const [posts, setPosts] = useState([]);

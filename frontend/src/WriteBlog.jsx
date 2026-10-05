@@ -4,7 +4,7 @@ import BlogEditor from "./BlogEditor";
 import { uploadImage } from "./cloudinaryUpload";
 import "./WriteBlog.css";
 
-const API_URL = "http://localhost:5000/api/posts";
+const API_URL = "https://blog-platform-l89y.onrender.com/api/posts";
 
 function WriteBlog({
   user,
